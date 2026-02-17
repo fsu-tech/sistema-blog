@@ -6,11 +6,12 @@
   <div class="formulario">
     <h2>Nueva Publicación</h2>
 
-    <form>
-      <input type="text" placeholder="Título">
-      <input type="text" placeholder="URL de la imagen">
-      <textarea placeholder="Texto de la noticia"></textarea>
-      <input type="date">
+
+    <form (ngSubmit)="agregarNoticia()">
+      <input type="text" placeholder="Título" [(ngModel)]="nuevaNoticia.titulo" name="titulo" required>
+      <input type="text" placeholder="URL de la imagen" [(ngModel)]="nuevaNoticia.imagen" name="imagen" required>
+      <textarea placeholder="Texto de la noticia" [(ngModel)]="nuevaNoticia.texto" name="texto" required></textarea>
+      <input type="date" [(ngModel)]="nuevaNoticia.fecha" name="fecha" required>
       <button type="submit">Publicar</button>
     </form>
 

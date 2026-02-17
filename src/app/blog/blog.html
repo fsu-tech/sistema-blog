@@ -20,11 +20,12 @@
   <div class="listado">
     <h2>Noticias Publicadas</h2>
 
-    <div class="noticia">
-      <h3>Título de ejemplo</h3>
-      <img src="https://picsum.photos/600/300">
-      <p>Texto de ejemplo de la noticia.</p>
-      <small>2025-02-17</small>
+    <!-- Pintar cada noticia con *ngFor -->
+    <div class="noticia" *ngFor="let noticia of noticias">
+      <h3>{{ noticia.titulo }}</h3>
+      <img [src]="noticia.imagen" alt="{{ noticia.titulo }}">
+      <p>{{ noticia.texto }}</p>
+      <small>{{ noticia.fecha }}</small>
     </div>
 
   </div>

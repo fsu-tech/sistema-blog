@@ -1,0 +1,37 @@
+.blog-container {
+  width: 80%;
+  margin: auto;
+  font-family: Arial, sans-serif;
+}
+
+.formulario, .listado {
+  margin-bottom: 40px;
+}
+
+form input,
+form textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 8px;
+}
+
+button {
+  padding: 8px 15px;
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.noticia {
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+.noticia img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+}

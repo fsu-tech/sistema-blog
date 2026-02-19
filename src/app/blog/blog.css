@@ -4,6 +4,39 @@
   font-family: Arial, sans-serif;
 }
 
+@media (max-width: 900px) {
+  .blog-container {
+    width: 95%;
+  }
+}
+
+@media (max-width: 600px) {
+  .blog-container {
+    width: 100%;
+    padding: 0 5px;
+  }
+  .formulario, .listado {
+    margin-bottom: 25px;
+  }
+  .noticia {
+    padding: 8px;
+    font-size: 15px;
+  }
+  .noticia img {
+    max-height: 180px;
+  }
+  button {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+  }
+  form input,
+  form textarea {
+    font-size: 15px;
+    padding: 6px;
+  }
+}
+
 .formulario, .listado {
   margin-bottom: 40px;
 }

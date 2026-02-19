@@ -26,7 +26,7 @@
       <h3>{{ noticia.titulo }}</h3>
       <img [src]="noticia.imagen" alt="{{ noticia.titulo }}">
       <p>{{ noticia.texto }}</p>
-      <small>{{ noticia.fecha }}</small>
+      <small>{{ formatearFecha(noticia.fecha) }}</small>
     </div>
 
   </div>
